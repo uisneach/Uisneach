@@ -494,6 +494,9 @@ body {
   flex-direction: column;
   min-height: 100%;
   overflow-wrap: break-word;
+/* Adjust margins on images */
+/* Default margin for all img tags */
+/* No margin for img tags within p tags */
 }
 .content p {
   hyphens: auto;
@@ -557,6 +560,22 @@ body {
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
+}
+.content figcaption {
+  text-align: center;
+  font-size: 11px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.content p:has(img) {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.content img {
+  margin-top: 14px;
+}
+.content p > img {
+  margin: 0;
 }
 @media (min-width: 540px) {
   .image-wrap {
