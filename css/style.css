@@ -577,6 +577,15 @@ body {
 .content p > img {
   margin: 0;
 }
+.content table.bilingual-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.content table.bilingual-table th,
+.content table.bilingual-table td {
+  width: 50%;
+  padding: 8px;
+}
 @media (min-width: 540px) {
   .image-wrap {
     flex-direction: row;
