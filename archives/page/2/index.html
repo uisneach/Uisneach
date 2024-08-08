@@ -315,7 +315,8 @@
 </div>
 
         
-        <footer id="footer">
+        <!-- <hr> Uncomment this when the fron tpage is full enough that this doesn't snap upwards -->
+<footer id="footer">
   <div class="footer-left">
     Copyright &copy;
     
@@ -324,13 +325,12 @@
     GoF
   </div>
   
-      <div class="email-input footer-center"></div>
       <!-- modify this form HTML and place wherever you want your form -->
   <form action="https://formspree.io/f/movadoor" onsubmit="this.submit(); this.reset(); return false;" method="POST" style="align-content:center;">
     <label>
-      <input type="email" name="email" required="true" placeholder="Enter Your Email..." style="background-color: rgb(29, 31, 33);border: 1px #999 solid;color:white;">
+      <input type="email" name="email" required="true" placeholder="Enter Your Email..." style="background-color: rgb(29, 31, 33);border: 1px #999 solid;color:white;font-family: 'Menlo', 'Meslo LG';font-size: 12px;">
     </label>
-  <button type="submit" style="background-color:rgb(29,31,33);color:#908d8d;border:none;border-radius:4px;" onmouseover="this.style.backgroundColor='#FCC200';this.style.color='rgb(29,31,33)';" onmouseout="this.style.backgroundColor='rgb(29,31,33)';this.style.color='#908d8d';">Subscribe</button>
+  <button class="email-button" type="submit" onmouseover="this.style.backgroundColor='#FCC200';this.style.color='rgb(29,31,33)';" onmouseout="this.style.backgroundColor='rgb(29,31,33)';this.style.color='#908d8d';">Subscribe</button>
 </form>
 
 <script>

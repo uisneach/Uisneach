@@ -497,6 +497,7 @@ body {
 /* Adjust margins on images */
 /* Default margin for all img tags */
 /* No margin for img tags within p tags */
+/* Email Submit Button */
 }
 .content p {
   hyphens: auto;
@@ -585,6 +586,17 @@ body {
 .content table.bilingual-table td {
   width: 50%;
   padding: 8px;
+}
+.content .email-button {
+  background-color: #1d1f21;
+  color: #908d8d;
+  border: none;
+  border-radius: 4px;
+  font-family: "Menlo", "Meslo LG", "monospace";
+  font-size: 12px;
+}
+.content form {
+  min-height: 25px;
 }
 @media (min-width: 540px) {
   .image-wrap {
@@ -1342,11 +1354,9 @@ article .content .caption {
     align-self: flex-start;
     margin-right: 20px;
   }
-  #footer .footer-center {
-    align-self: flex-center;
-  }
   #footer .footer-right {
     align-self: flex-end;
+    margin-left: 20px;
   }
 }
 .pagination {
